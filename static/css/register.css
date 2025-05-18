@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.hero {
+    padding: 80px 0;
+}
+.hero img {
+    max-width: 100%;
+}
+.footer {
+    background-color: #1b1b1b;
+    padding: 30px 0;
+}
+.footermidel   {
+    text-align: center;
+}
+.footer a {
+    color: #a3f7b5;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #67c786;
+}
+.footer .subscribe-btn {
+    background-color: #67c786;
+    border: none;
+    color: black;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: pop 0.3s ease-out;
+  }
+
+  @keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .close-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    background-color: #45a049;
+  }
+
+  #logout {
+    display: none;
+    color: rgb(186, 0, 0);
+}
