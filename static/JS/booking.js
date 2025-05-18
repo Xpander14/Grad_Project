@@ -128,3 +128,14 @@ function logout1() {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    let selectedService = localStorage.getItem("selectedService");
+    if (selectedService) {
+        let checkboxes = document.querySelectorAll('.services input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            if (checkbox.value === selectedService) {
+                checkbox.checked = true;
+            }
+        });
+    }
+});
